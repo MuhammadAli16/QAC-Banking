@@ -1,0 +1,25 @@
+<div ng-controller="addMovieController as ctrl">
+	<div style="padding-left:10px;">
+		<h1>Add a new movie</h1>
+		<form>
+			<div class="form-group">
+				<label for="title">Title</label> <input type="text"
+					class="form-control" id="title" placeholder="Enter title"
+					ng-model="movie.title">
+			</div>
+			<div class="form-group">
+				<label for="genre">Genre</label> <input type="text"
+					class="form-control" id="genre" placeholder="Enter genre"
+					ng-model="movie.genre">
+			</div>
+			<div class="form-group">
+				<label for="rating">Rating</label> <input type="text"
+					class="form-control" id="rating" placeholder="Enter rating"
+					ng-model="movie.rating">
+			</div>
+			<button type="submit" class="btn btn-default"
+				ng-click="ctrl.addMovie(movie)">Add Movie</button>
+		</form>
+	</div>
+</div>
+
