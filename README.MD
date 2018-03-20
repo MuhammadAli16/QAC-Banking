@@ -10,6 +10,6 @@ docker run --name bank-mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=m
 
 docker logs bank-mysql (ensure mysql server is up)
 
-docker run -p 8080:8080 --name bank-app --link movie-mysql:mysql -d qacinema/movie
+docker run -p 8080:8080 --name bank-app --link bank-mysql:mysql -d qabank/movie
 
 docker logs bank-app (ensure app is up by accessing http://localhost:8080)
