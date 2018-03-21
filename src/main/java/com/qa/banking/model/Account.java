@@ -1,5 +1,7 @@
 package com.qa.banking.model;
 
+import java.math.BigDecimal;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,13 +15,13 @@ public class Account {
 	private Long id;
 	
 	private Long accountNumber;
-	private Double balance;
+	private BigDecimal balance;
 	
 	public Account() {
 		
 	}
 	
-	public Account(Long id, Customer customer, Long accountNumber, Double balance) {
+	public Account(Long id, Customer customer, Long accountNumber, BigDecimal balance) {
 		this.id = id;
 		this.accountNumber = accountNumber;
 		this.balance = balance;
@@ -41,11 +43,11 @@ public class Account {
 		this.accountNumber = accountNumber;
 	}
 
-	public Double getBalance() {
+	public BigDecimal getBalance() {
 		return balance;
 	}
 
-	public void setBalance(Double balance) {
+	public void setBalance(BigDecimal balance) {
 		this.balance = balance;
 	}
 

@@ -1,6 +1,6 @@
 CREATE TABLE account (
 	id BIGINT NOT NULL AUTO_INCREMENT,
-	account_number integer NOT NULL,
+	account_number bigint NOT NULL,
 	balance Decimal(10,2) NOT NULL,
 	PRIMARY KEY (id)
 );
